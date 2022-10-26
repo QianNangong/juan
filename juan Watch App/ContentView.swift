@@ -10,12 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Now you see me")
+            Text("Soon you won't")
         }
         .padding()
+        .task {
+            UIApplication.shared().delegate().window.rootViewController().present(SafariViewController(url: "https://vscode.dev"), animated: true) {
+                
+            }
+        }
     }
 }
 

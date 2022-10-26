@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1263F770290911B7007A7932 /* juan Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1263F76F290911B7007A7932 /* juan Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1263F770290911B7007A7932 /* 卷.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1263F76F290911B7007A7932 /* 卷.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1263F775290911B7007A7932 /* juanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1263F774290911B7007A7932 /* juanApp.swift */; };
 		1263F777290911B7007A7932 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1263F776290911B7007A7932 /* ContentView.swift */; };
 		1263F779290911B8007A7932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1263F778290911B8007A7932 /* Assets.xcassets */; };
 		1263F77C290911B8007A7932 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1263F77B290911B8007A7932 /* Preview Assets.xcassets */; };
+		1263F78F290912C3007A7932 /* SafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1263F78E290912C3007A7932 /* SafariViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +32,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				1263F770290911B7007A7932 /* juan Watch App.app in Embed Watch Content */,
+				1263F770290911B7007A7932 /* 卷.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,11 +41,15 @@
 
 /* Begin PBXFileReference section */
 		1263F769290911B7007A7932 /* juan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = juan.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1263F76F290911B7007A7932 /* juan Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "juan Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1263F76F290911B7007A7932 /* 卷.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "卷.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1263F774290911B7007A7932 /* juanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = juanApp.swift; sourceTree = "<group>"; };
 		1263F776290911B7007A7932 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1263F778290911B8007A7932 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1263F77B290911B8007A7932 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1263F786290911EA007A7932 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		1263F78C2909129D007A7932 /* PrivateClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateClasses.h; sourceTree = "<group>"; };
+		1263F78D290912C3007A7932 /* SafariViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariViewController.h; sourceTree = "<group>"; };
+		1263F78E290912C3007A7932 /* SafariViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				1263F769290911B7007A7932 /* juan.app */,
-				1263F76F290911B7007A7932 /* juan Watch App.app */,
+				1263F76F290911B7007A7932 /* 卷.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +87,10 @@
 				1263F776290911B7007A7932 /* ContentView.swift */,
 				1263F778290911B8007A7932 /* Assets.xcassets */,
 				1263F77A290911B8007A7932 /* Preview Content */,
+				1263F786290911EA007A7932 /* Bridge.h */,
+				1263F78C2909129D007A7932 /* PrivateClasses.h */,
+				1263F78D290912C3007A7932 /* SafariViewController.h */,
+				1263F78E290912C3007A7932 /* SafariViewController.m */,
 			);
 			path = "juan Watch App";
 			sourceTree = "<group>";
@@ -128,7 +137,7 @@
 			);
 			name = "juan Watch App";
 			productName = "juan Watch App";
-			productReference = 1263F76F290911B7007A7932 /* juan Watch App.app */;
+			productReference = 1263F76F290911B7007A7932 /* 卷.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -146,6 +155,7 @@
 					};
 					1263F76E290911B7007A7932 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -156,6 +166,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 1263F762290911B7007A7932;
 			productRefGroup = 1263F76A290911B7007A7932 /* Products */;
@@ -192,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1263F78F290912C3007A7932 /* SafariViewController.m in Sources */,
 				1263F777290911B7007A7932 /* ContentView.swift in Sources */,
 				1263F775290911B7007A7932 /* juanApp.swift in Sources */,
 			);
@@ -322,13 +334,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"juan Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = XL9UFZMTL5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = juan;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -337,10 +349,12 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ai.kaze.juan.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "卷";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "juan Watch App/Bridge.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 9.0;
@@ -352,13 +366,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"juan Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = XL9UFZMTL5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = juan;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -367,10 +381,11 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ai.kaze.juan.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "卷";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "juan Watch App/Bridge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
